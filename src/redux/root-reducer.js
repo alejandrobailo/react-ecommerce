@@ -10,16 +10,8 @@ import shopReducer from './shop/shop.reducer';
 const persisConfig = {
 	key: 'root',
 	storage,
-	// Pasamos en un array que reducers queremos meter en persist
 	whitelist: [ 'cart' ]
 };
-
-/* Versión sin storage:
-
-export default combineReducers({
-	user: userReducer,
-	cart: cartReducer
-}); */
 
 const rootReducer = combineReducers({
 	user: userReducer,

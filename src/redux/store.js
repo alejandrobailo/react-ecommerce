@@ -8,7 +8,6 @@ const middlewares = [ logger ];
 
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
-// Para guardar localmente:
 export const persistor = persistStore(store);
 
 export default { store, persistor };

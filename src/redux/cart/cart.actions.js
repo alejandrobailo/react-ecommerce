@@ -18,5 +18,3 @@ export const removeItem = (item) => ({
 	type: CartActionTypes.REMOVE_ITEM,
 	payload: item
 });
-
-// Payload puede ser lo que nosotros queramos, en este caso sera el item que vamos a introducir en el cart

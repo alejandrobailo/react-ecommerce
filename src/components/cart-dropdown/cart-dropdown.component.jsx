@@ -31,8 +31,6 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
 	</div>
 );
 
-// En vez de crear otra funcion de dispatchToProps, la pasamos por parametro directamente porque a tener redux dispatch es una prop y podemos usarla, entonces ejecutamos la funcion en el onclick
-
 const mapStateToProps = createStructuredSelector({
 	cartItems: selectCartItems
 });

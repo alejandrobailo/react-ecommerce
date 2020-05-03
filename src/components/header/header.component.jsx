@@ -40,8 +40,6 @@ const Header = ({ currentUser, hidden }) => (
 	</div>
 );
 
-// Importamos connect arriba y conectamos el componente al reducer
-// En app.js borramos el prop que le pasaba el currentUser al header
 const mapStateToProps = createStructuredSelector({
 	currentUser: selectCurrentUser,
 	hidden: selectCartHidden
